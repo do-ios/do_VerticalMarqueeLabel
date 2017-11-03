@@ -1,0 +1,189 @@
+{
+    "Android" : {
+        "MinVersion" : "4.0",
+        "Support" : 1
+    },
+    "BBS" : "",
+    "Description" : "多条文字垂直滚动",
+    "Events" : [],
+    "Html" : {
+        "MinVersion" : "5",
+        "Support" : 1
+    },
+    "ID" : "do_VerticalMarqueeLabel",
+    "IOS" : {
+        "MinVersion" : "7.0",
+        "Support" : 1
+    },
+    "Icon" : "",
+    "IsContainer" : "0",
+    "Keyword" : "其它类型",
+    "Name" : "纵向跑马灯标签框",
+    "Properties" : [
+                    {
+                    "DefaultValue" : "up",
+                    "Description" : "修改文字滚动方向，支持向上与向下",
+                    "Design" : {
+                    "Data" : [
+                              {
+                              "ID" : "down",
+                              "Value" : "向下滚动"
+                              },
+                              {
+                              "ID" : "up",
+                              "Value" : "向上滚动"
+                              }
+                              ],
+                    "Type" : "List"
+                    },
+                    "EditType" : "0",
+                    "Group" : "",
+                    "ID" : "direction",
+                    "Name" : "文字滚动方向",
+                    "Type" : "String"
+                    },
+                    {
+                    "DefaultValue" : "0",
+                    "Description" : "有两种滚动类型,一种是只有一条数据同时出现,中间位置停止一下,然后继续滚动,另一种是多条数据同时轮播,匀速移动",
+                    "Design" : {
+                    "Data" : [
+                              {
+                              "ID" : "0",
+                              "Value" : "只有一条数据同时出现,中间位置停止一下,然后继续滚动"
+                              },
+                              {
+                              "ID" : "1",
+                              "Value" : "多条数据同时轮播,匀速移动"
+                              }
+                              ],
+                    "Type" : "List"
+                    },
+                    "EditType" : "0",
+                    "Group" : "",
+                    "ID" : "style",
+                    "Name" : "文字滚动类型",
+                    "Type" : "Number"
+                    },
+                    {
+                    "DefaultValue" : "",
+                    "Description" : "支持显示多条内容,格式为['aaa','bbb','ccc'...]",
+                    "Design" : {
+                    "Data" : [],
+                    "Type" : "Richtext"
+                    },
+                    "EditType" : "1",
+                    "Group" : "",
+                    "ID" : "text",
+                    "Name" : "文本显示内容",
+                    "Type" : "Node"
+                    },
+                    {
+                    "DefaultValue" : "000000FF",
+                    "Description" : "设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），例如：000000FF",
+                    "Design" : {
+                    "Data" : [],
+                    "Type" : "Color"
+                    },
+                    "EditType" : "1",
+                    "Group" : "",
+                    "ID" : "fontColor",
+                    "Name" : "字体颜色",
+                    "Type" : "String"
+                    },
+                    {
+                    "DefaultValue" : "normal",
+                    "Description" : "包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体",
+                    "Design" : {
+                    "Data" : [
+                              {
+                              "ID" : "normal",
+                              "Value" : "常规"
+                              },
+                              {
+                              "ID" : "bold",
+                              "Value" : "粗体"
+                              },
+                              {
+                              "ID" : "italic",
+                              "Value" : "斜体"
+                              },
+                              {
+                              "ID" : "bold_italic",
+                              "Value" : "粗斜体"
+                              }
+                              ],
+                    "Type" : "List"
+                    },
+                    "EditType" : "1",
+                    "Group" : "",
+                    "ID" : "fontStyle",
+                    "Name" : "字体风格",
+                    "Type" : "String"
+                    },
+                    {
+                    "DefaultValue" : "normal",
+                    "Description" : "包含3种类型：normal：常规underline ：下划线strikethrough ：删除线",
+                    "Design" : {
+                    "Data" : [
+                              {
+                              "ID" : "normal",
+                              "Value" : "常规"
+                              },
+                              {
+                              "ID" : "underline",
+                              "Value" : "下划线"
+                              },
+                              {
+                              "ID" : "strikethrough",
+                              "Value" : "删除线"
+                              }
+                              ],
+                    "Type" : "List"
+                    },
+                    "EditType" : "0",
+                    "Group" : "",
+                    "ID" : "textFlag",
+                    "Name" : "字体标示",
+                    "Type" : "String"
+                    },
+                    {
+                    "DefaultValue" : "17",
+                    "Description" : "",
+                    "Design" : {
+                    "Data" : [],
+                    "Type" : "UInteger"
+                    },
+                    "EditType" : "1",
+                    "Group" : "",
+                    "ID" : "fontSize",
+                    "Name" : "字体大小",
+                    "Type" : "Number"
+                    },
+                    {
+                    "ID": "duration",
+                    "Name": "动画间隔",
+                    "Type": "Number",
+                    "DefaultValue": "2000",
+                    "EditType": "0",
+                    "Group": "",
+                    "Description": "文字跑完全程的时间,当style为0的时候,不包含中间停顿时间,单位毫秒",
+                    "Design": {
+                        "Type": "UInteger",
+                        "Data": []
+                        }
+                    }
+                    ],
+    "Type" : "UI",
+    "UIType" : "2",
+    "Version" : "1.0",
+    "Windows" : {
+        "MinVersion" : "8.1",
+        "Support" : 1
+    },
+    "WindowsPhone" : {
+        "MinVersion" : "8.1",
+        "Support" : 1
+    },
+    "asyncMethodes" : [],
+    "syncMethodes" : []
+}
